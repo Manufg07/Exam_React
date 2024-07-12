@@ -10,7 +10,7 @@ const Logout = () => {
                 const res = await fetch('api/logout')
                 if(res.ok){
                     toast.success('Logout')
-                        navigate('/login')
+                        navigate('/')
                 }
             }catch(error){
                 toast.error('something went wrong')
